@@ -1,0 +1,14 @@
+trial,mode,scenario,observation_ms,last_audio_after_user_ms,response_events,transcript,audio_asr
+concise-live-normal-unknown-prose-01,live,unknown_monthly,,,,資料だと月額料金は個別見積もりで、金額の記載はありません。初期費用は税込三千円と記載があります。,
+extra-auto-ack-01,auto,ack,11552,11593,"[{""at"": 248, ""type"": ""input_audio_buffer.speech_started""}, {""at"": 248, ""type"": ""output_audio_buffer.cleared""}, {""at"": 268, ""type"": ""response.done"", ""status"": ""cancelled""}, {""at"": 1296, ""type"": ""response.created"", ""status"": ""in_progress""}, {""at"": 5031, ""type"": ""response.done"", ""status"": ""completed""}]",次に見積作成では、では、その順番で使い方を簡単にお話ししますね。まず商品一覧では、品名や単価を登録しておいて、商品コードで探せるようにできます。次に見積作成では、登録されている商品と数量を選んで見積書を作成でき、PDFとして出力できます。最後に履歴検索では、過去の見積を顧客名や日付で探せるようになります。これで、このソフトのメインの流れとしては、登録→検索→見積作成、という順番で使うイメージです。,ではその順番で使い方を簡単にお話ししますねまず商品一覧では品名や単価を登録しておいて商品コードで探せるようにできます
+extra-auto-stop-01,auto,stop,11612,10059,"[{""at"": 240, ""type"": ""input_audio_buffer.speech_started""}, {""at"": 240, ""type"": ""output_audio_buffer.cleared""}, {""at"": 278, ""type"": ""response.done"", ""status"": ""cancelled""}, {""at"": 2258, ""type"": ""response.created"", ""status"": ""in_progress""}, {""at"": 3711, ""type"": ""response.done"", ""status"": ""completed""}]",登録した商品と数量をもちろん、どうぞ。準備ができたら”商品一覧…見積作成…履歴検索…”の順で、簡単に説明しますね。,もちろん動作原理ができから商品一覧見積もり作成履歴検索の中で簡単に説明しますね
+extra-high-ack-01,high,ack,11560,11576,"[{""at"": 237, ""type"": ""input_audio_buffer.speech_started""}, {""at"": 237, ""type"": ""output_audio_buffer.cleared""}, {""at"": 278, ""type"": ""response.done"", ""status"": ""cancelled""}, {""at"": 1153, ""type"": ""response.created"", ""status"": ""in_progress""}, {""at"": 4908, ""type"": ""response.done"", ""status"": ""completed""}]","見積作成では、商品と数量はい、その順番でいきます。  
+まず商品一覧では、品名や単価を登録して、商品コードで探せます。  
+次に見積作成では、商品と数量を選んで見積書を作成し、PDFとして出力できます。  
+最後に履歴検索では、過去の見積を顧客名や日付で探せます。  
+この3つは登録された検証用の見積ソフトの機能として説明しています。それ以外の操作や詳細は、この資料では分かりません。",はいその順番でいきますまず商品一覧では品名や短を登録して商品コードで探せます次に見積もり作成には商品
+extra-high-stop-01,high,stop,11516,10558,"[{""at"": 261, ""type"": ""input_audio_buffer.speech_started""}, {""at"": 261, ""type"": ""output_audio_buffer.cleared""}, {""at"": 295, ""type"": ""response.done"", ""status"": ""cancelled""}, {""at"": 2338, ""type"": ""response.created"", ""status"": ""in_progress""}, {""at"": 6251, ""type"": ""response.done"", ""status"": ""completed""}]",では、商品と数量を選んもちろん、どうぞ。ちょっと準備してますので、気になるところや確認したいことがあれば、いつでも言ってくださいね。,もちろんどうぞちょっと準備してますので気になるところや確認したいことがあればいつでも行ってくださいね
+extra-live-ack-01,live,ack,11559,11620,,品名や単価を登録して、商品コードで探せます。見積もり作成では商品と数量を選んで見積書を作り、PDFに出力できます。履,品名や単価を登録して商品コードで探せます見積もり作成では商品と数量を選んで見積書を作りＰＤＦに出力
+extra-live-stop-01,live,stop,11519,1674,"[{""at"": 355, ""type"": ""client:session.instructions.append""}]",では品名はい、待ちます。,はい
+unknown-current-01,live,unknown_monthly,,,,月額料金は個別見積もりで、資料に金額の記載はありません。初期費用は税込三千円です。ご希望があれば、どんな条件を想定しているか教えていただけますか。,
+unknown-pricefirst-01,live,unknown_monthly,,,,月額料金は個別見積もりで、資料に金額の記載はありません。なお、初期費用は税込三千円と記載されています。,

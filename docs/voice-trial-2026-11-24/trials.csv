@@ -1,0 +1,77 @@
+trial,series,mode,scenario,brief,expected_yen,amount_in_caption,other_price_in_caption,first_audio_ms,first_amount_audio_ms,amount_audio_end_ms,first_heard_amount_yen,alignment,caption_amount_ms,vad_stop_event_after_input_ms,vad_stops_after_input_begin,last_old_greeting_audio_ms,last_any_ai_audio_during_barge_ms,any_audio_in_correction_pause,any_audio_during_input,rtt_ms,receiver_buffer_ms,packets_lost,concealed_samples,network_sample_window_ms,greeting_fallback,error,transcript
+auto-barge-prose-01,main,auto,barge,prose,1000,True,False,1933,3808,4198,1000,matched,1946,1250,1,467,467,,True,249,90.4,0,943,11959,False,,月額料金は税込で千円です。それだけでしたら、今のところその通りの登録内容です。ほかにも知りたいことがあれば、どうぞ聞いてください。
+auto-barge-prose-02,main,auto,barge,prose,1000,True,False,1849,3306,3710,1000,matched,1759,1082,1,445,445,,True,190,94.9,0,480,8836,False,,月額料金は税込で1000円です。
+auto-barge-prose-03,main,auto,barge,prose,1000,True,False,1635,,,,金額列の先頭が字幕と独立音声認識で不一致／語境界と金額列の先頭が不一致,2875,1143,1,381,381,,True,190,92.6,0,0,12894,False,,わかりました。その部分だけお伝えしますね。AI営業担当です。登録された商品の月額料金は税込1000円です。
+auto-correction-prose-01,main,auto,correction,prose,3000,True,True,1838,4330,4966,3000,matched,1860,1127,1,,,False,False,191,112.8,0,0,12236,False,,"答えると、初期費用は税込で3,000円です。月額は1,000円（税込）と登録されています。初期費用以外に何か気になる部分、たとえば月額との違いとかあれば、その点も説明できますよ。"
+auto-correction-prose-02,main,auto,correction,prose,3000,True,True,2522,4023,4653,3000,matched,2639,896,1,,,False,False,192,92.3,0,0,13022,False,,初期費用は税込三千円です。例えば、この検証用の見積ソフトなら、月額千円、初期費用三千円といった形になります。
+auto-correction-prose-03,main,auto,correction,prose,3000,True,True,1852,3199,3787,3000,matched,1747,1095,1,,,False,False,189,92,0,0,12121,False,,初期費用は税込みで3千円です。月額は千円ですが、初期費用は3千円ですね。
+auto-normal-prose-01,main,auto,normal,prose,1000,True,True,1705,4918,5428,1000,matched,1673,973,1,,,,False,198,172.4,0,0,10733,False,,検証用の見積ソフトは、月額が税込み千円、初期費用が税込み三千円です。商品一覧から見積書を作れるとのことなので、この使い方によって、見積作成の流れを変えられます。登録されている情報から、それ以上の詳細な設定や手順が必要な場合は、今の資料では分からないので、その前提でお考えください。
+auto-normal-prose-02,main,auto,normal,prose,1000,True,False,2234,5814,6111,1000,matched,2120,1211,1,,,,False,237,91.6,0,0,11189,False,,登録された情報では、月額料金は税込みで千円です。ほかに気になることや、見積書の作成などについても気軽に聞いてくださいね。
+auto-normal-prose-03,main,auto,normal,prose,1000,True,False,1687,3759,4140,1000,matched,1625,907,1,,,,False,236,91.6,0,0,8302,False,,はい、月額料金は税込千円です。
+auto-normal-prose-04,main,auto,normal,prose,1000,True,True,1834,3817,4191,1000,matched,1769,1142,1,,,,False,189,89.9,0,0,10877,False,,はい、月額料金は税込で千円です。初期費用は税込で三千円です。
+auto-normal-prose-05,main,auto,normal,prose,1000,True,True,1778,3656,4098,1000,matched,1668,1038,1,,,,False,188,91.6,0,0,8241,False,,月額料金は税込で千円です。初期費用は税込で三千円になります。点額についてはこれが登録された内容です。
+auto-normal-prose-06,main,auto,normal,prose,1000,True,True,1712,3548,3938,1000,matched,1620,948,1,,,,False,189,93,0,0,10673,False,,月額料金は、税込で千円です。このソフトでは、検証用の見積ソフトとして、商品一覧から見積書を作ることができます。初期費用は税込三千円です。
+auto-normal-prose-07,main,auto,normal,prose,1000,True,True,2253,4370,4739,1000,matched,2183,1446,1,,,,False,190,92.4,0,0,11248,False,,"月額料金は税込で1,000円です。初期費用は税込で3,000円で、商品一覧から見積書を作る検証用のソフトです。"
+auto-normal-prose-08,main,auto,normal,prose,1000,True,False,2253,4848,5328,1000,matched,2165,1092,1,,,,False,188,94.9,0,480,9498,False,,"はい、月額料金は、税込で1,000円です。"
+auto-normal-prose-09,main,auto,normal,prose,1000,True,False,2211,3922,4309,1000,matched,1979,1118,1,,,,False,201,92.1,0,0,8484,False,,月額料金は、税込千円です。
+auto-normal-prose-10,main,auto,normal,prose,1000,True,True,2280,4457,4907,1000,matched,2237,1466,1,,,,False,190,109.8,0,0,11302,False,,はい、月額料金は税込で千円です。初期費用は税込で三千円で、商品一覧から見積書を作るタイプです。
+brief-live-correction-prose-01,brief,live,correction,prose,3000,True,False,1656,3397,4080,3000,matched,3195,,,,,False,False,163,386.9,0,0,9549,False,,初期費用は、税込三千円です。
+brief-live-correction-prose-02,brief,live,correction,prose,3000,True,False,1522,2067,2787,3000,matched,1958,,,,,False,True,646,185.1,0,17782,8235,False,,税込三千円です。
+brief-live-correction-prose-03,brief,live,correction,prose,3000,True,False,1233,2903,3648,3000,matched,2751,,,,,False,False,95,104.4,0,8524,9130,False,,初期費用は税込三千円です。
+brief-live-correction-structured-01,brief,live,correction,structured,3000,True,False,1730,3288,3965,3000,matched,3010,,,,,False,False,128,342.4,0,0,9441,False,,初期費用は税込み三千円です。
+brief-live-correction-structured-02,brief,live,correction,structured,3000,True,False,1541,3402,4109,3000,matched,3132,,,,,False,False,170,219.8,0,17682,9583,False,, 初期費用は税込三千円です。
+brief-live-correction-structured-03,brief,live,correction,structured,3000,True,False,1528,2988,3588,3000,matched,2930,,,,,False,False,99,142,0,0,9096,False,,初期費用は、税込三千円です。
+brief-live-normal-prose-01,brief,live,normal,prose,1000,True,True,1488,3019,3498,1000,matched,2765,,,,,,False,127,112.1,0,1817,11840,False,,月額料金は税込千円です。初期費用は税込三千円で、商品一覧から見積書を作れます。
+brief-live-normal-prose-02,brief,live,normal,prose,1000,True,False,1342,,,1000,語境界と金額列の先頭が不一致,2209,,,,,,False,237,148.9,0,0,7244,False,,月額は税込千円です。
+brief-live-normal-prose-03,brief,live,normal,prose,1000,True,False,1204,2367,2814,1000,matched,2100,,,,,,False,108,124.6,0,0,7017,False,,月額は税込み千円です。
+brief-live-normal-structured-01,brief,live,normal,structured,1000,True,False,1457,3311,3755,1000,matched,3112,,,,,,False,128,157.4,0,0,7979,False,, 月額料金は税込千円です。
+brief-live-normal-structured-02,brief,live,normal,structured,1000,True,False,1487,3363,3953,1000,matched,3180,,,,,,False,127,102,0,10853,8344,False,, 月額は税込で千円です。
+brief-live-normal-structured-03,brief,live,normal,structured,1000,True,False,1505,3563,4047,1000,matched,3309,,,,,,False,142,120.1,0,269,8324,False,, 月額料金は税込で千円です。
+concise-live-correction-known-prose-01,concise,live,correction,prose,3000,True,False,1390,3295,4126,3000,matched,3262,,,,,False,False,95,151.5,0,1352,9635,False,,初期費用は税込三千円です。
+concise-live-correction-known-prose-02,concise,live,correction,prose,3000,True,False,1274,3300,4140,3000,matched,3191,,,,,False,False,96,124.1,0,0,9750,False,,初期費用は、税込三千円です。
+concise-live-correction-known-prose-03,concise,live,correction,prose,3000,True,False,1225,2875,3590,3000,matched,2951,,,,,False,False,87,128.7,0,1302,9130,False,,初期費用は税込で三千円です。
+concise-live-normal-known-prose-01,concise,live,normal,prose,1000,True,False,1302,3421,3991,1000,matched,2935,,,,,,False,126,97.3,0,17035,8203,False,, 月額は税込で千円です。
+concise-live-normal-known-prose-02,concise,live,normal,prose,1000,True,False,1120,,,1000,語境界と金額列の先頭が不一致,2947,,,,,,False,164,101.6,0,477,7889,False,,月額料金は税込千円です。
+concise-live-normal-known-prose-03,concise,live,normal,prose,1000,True,False,1695,2284,2819,1000,matched,1822,,,,,,False,124,341.6,0,0,7046,False,,税込で千円です。
+high-barge-prose-01,main,high,barge,prose,1000,True,False,1776,3680,4147,1000,matched,1655,1127,1,430,430,,True,190,121.1,0,0,9227,False,,月額料金は、税込で千円です。
+high-barge-prose-02,main,high,barge,prose,1000,True,False,2019,5015,5457,1000,matched,2038,1418,1,390,390,,True,250,91.3,0,0,10560,False,,まず結論は、月額料金は税込みで千円です。
+high-barge-prose-03,main,high,barge,prose,1000,True,False,1635,3387,3777,1000,matched,1536,1012,1,412,412,,True,189,91.8,0,0,11554,False,,月額料金は税込で千円です。そのほかの詳細は必要ならお話ししますが、まずはこの月額だけお伝えしますね。
+high-correction-prose-01,main,high,correction,prose,3000,True,True,2220,3826,4456,3000,matched,2099,1085,1,,,False,False,191,92.8,0,0,12459,False,,初期費用は税込みで三千円です。 続けて、月額は千円です、とお伝えします。ご希望の内容に合う形で登録された商品情報をお伝えできました。
+high-correction-prose-02,main,high,correction,prose,3000,True,True,2723,4345,4993,3000,matched,2601,1101,1,,,False,False,196,90.9,0,0,12950,False,,"初期費用は税込みで3,000円です。月額は1,000円（税込）ですが、今お聞きになったのは初期費用ですね。"
+high-correction-prose-03,main,high,correction,prose,3000,True,False,2163,3768,4305,3000,matched,2076,1377,1,,,False,False,194,91.6,0,0,9745,False,,"初期費用は、税込で3,000円です。"
+high-normal-prose-01,main,high,normal,prose,1000,True,True,1675,4426,4816,1000,matched,1718,992,1,,,,False,189,99.8,0,480,8956,False,,"このソフトの月額料金は、税込1,000円です。初期費用は税込3,000円で、商品一覧から見積書を作れます。"
+high-normal-prose-02,main,high,normal,prose,1000,True,True,1765,3425,3965,1000,matched,1682,1097,1,,,,False,271,92.9,0,0,10739,False,,月額料金は税込で1000円です。初期費用は税込で3000円です。この登録情報では、商品一覧から見積書を作れる点も説明されています。
+high-normal-prose-03,main,high,normal,prose,1000,True,True,1514,3240,3645,1000,matched,1450,868,1,,,,False,190,95.8,0,1029,10509,False,,月額料金は税込で千円です。初期費用は税込三千円です。商品一覧から見積書を作成できる機能も含まれています。
+high-normal-prose-04,main,high,normal,prose,1000,True,False,1666,4144,4564,1000,matched,1600,839,1,,,,False,194,92.7,0,0,8677,False,,このソフトの月額料金は税込で千円です。登録情報ではこれが検証用の見積ソフトの月額です。その他の詳細な条件が必要な場合は、もしあれば他の条件も教えてください。
+high-normal-prose-05,main,high,normal,prose,1000,True,True,1844,3594,3894,1000,matched,1722,899,1,,,,False,189,103.7,0,0,10783,False,,"月額料金は、税込で1,000円です。初期費用は税込で3,000円です。見積書を商品一覧から作成できる点も含めて、検証用の見積ソフトとしての内容です。"
+high-normal-prose-06,main,high,normal,prose,1000,True,True,1943,3544,3931,1000,matched,1749,1133,1,,,,False,191,152.6,0,0,10813,False,,月額料金は税込で千円です。初期費用は税込で三千円。見積書は商品一覧から作成できますよ。
+high-normal-prose-07,main,high,normal,prose,1000,True,False,1682,3449,3899,1000,matched,1614,1028,1,,,,False,200,92.1,0,0,10321,False,,月額料金は、税込で千円です。お支払いはその価格のままです。
+high-normal-prose-08,main,high,normal,prose,1000,True,False,1887,4257,4703,1000,matched,1852,1088,1,,,,False,191,92.6,0,0,10910,False,,"はい、月額料金は税込で1000円です。
+
+イメージとしては、毎月その金額で使える、検証用の見積ソフト、という登録内容ですね。
+
+ほかに気になることはありますか？"
+high-normal-prose-09,main,high,normal,prose,1000,True,False,1810,,,,金額列の先頭が字幕と独立音声認識で不一致,1804,1164,1,,,,False,190,92.6,0,0,11023,False,,このソフトの月額料金は、税込で1000円です。ほかに気になる点があれば、どうぞ聞いてください！
+high-normal-prose-10,main,high,normal,prose,1000,True,True,1880,3686,4105,1000,matched,1797,1097,1,,,,False,189,93.3,0,587,11149,False,,月額料金は税込みで千円です。初期費用は税込み三千円です。
+live-barge-prose-01,main,live,barge,prose,1000,True,False,1334,2893,3392,1000,matched,2725,,,153,153,,True,156,91.6,0,3351,8544,False,,月額は税込千円です。
+live-barge-prose-02,main,live,barge,prose,1000,True,False,1634,3480,3930,1000,matched,3191,,,141,3095,,True,163,115.1,0,2881,9060,False,,月額料金は税込千円です。
+live-barge-prose-03,main,live,barge,prose,1000,True,False,1237,1731,2170,1000,matched,1486,,,147,147,,True,129,103.2,0,581,7320,False,,税込千円です。
+live-correction-prose-01,main,live,correction,prose,3000,True,False,1297,2737,3397,3000,matched,2780,,,,,False,False,98,134.4,0,1661,8931,False,,初期費用は税込三千円です。
+live-correction-prose-02,main,live,correction,prose,3000,True,False,1482,2983,3583,3000,matched,2933,,,,,False,False,99,156.3,0,695,9084,False,,初期費用は税込三千円です。
+live-correction-prose-03,main,live,correction,prose,3000,True,False,1585,,,3000,語境界と金額列の先頭が不一致,3277,,,,,False,False,126,222.7,2,47843,10327,False,, 初期費用は税込で三千円です。
+live-normal-prose-01,main,live,normal,prose,1000,True,False,1788,3872,4467,1000,matched,3426,,,,,,False,186,231.9,0,23016,8624,False,,月額は税込みで千円です。
+live-normal-prose-02,main,live,normal,prose,1000,True,False,1641,3231,3723,1000,matched,2859,,,,,,False,184,139.2,0,0,7950,False,,月額は税込で千円です。
+live-normal-prose-03,main,live,normal,prose,1000,True,False,1169,2638,3166,1000,matched,2245,,,,,,False,97,133.2,0,1060,7407,False,,月額は税込み千円です。
+live-normal-prose-04,main,live,normal,prose,1000,True,False,1406,1976,2511,1000,matched,1659,,,,,,False,99,192.4,0,0,6686,False,, 税込み千円です。
+live-normal-prose-05,main,live,normal,prose,1000,True,False,1355,2676,3186,1000,matched,2497,,,,,,False,124,96.4,0,0,7353,False,,月額は税込みで千円です。
+live-normal-prose-06,main,live,normal,prose,1000,True,False,1395,2836,3282,1000,matched,2603,,,,,,False,147,193.9,0,405,7469,False,,月額は税込で千円です。
+live-normal-prose-07,main,live,normal,prose,1000,True,False,1491,3565,4069,1000,matched,3251,,,,,,False,88,178.7,0,0,8274,False,,月額は税込みで千円です。
+live-normal-prose-08,main,live,normal,prose,1000,True,False,1537,3625,4183,1000,matched,3440,,,,,,False,96,134.2,0,0,8401,False,,月額は税込で千円です。
+live-normal-prose-09,main,live,normal,prose,1000,True,False,1570,3266,3770,1000,matched,2947,,,,,,False,203,170.5,0,0,7971,False,,月額は税込で千円です。
+live-normal-prose-10,main,live,normal,prose,1000,True,False,1360,,,1000,語境界と金額列の先頭が不一致,2426,,,,,,False,98,164.5,0,0,7358,False,, 月額は税込み千円です。
+pricefirst-live-correction-prose-01,pricefirst,live,correction,prose,3000,True,False,1059,1757,2447,3000,matched,1750,,,,,False,True,86,228,0,0,12101,False,,税込三千円です。月額とは別で、最初に一度だけかかる費用です。
+pricefirst-live-correction-prose-02,pricefirst,live,correction,prose,3000,True,False,1960,1944,2694,3000,matched,1509,,,,,False,False,126,536.4,3,16080,10684,True,, 三千円です、税込の初期費用になりますよ。
+pricefirst-live-correction-prose-03,pricefirst,live,correction,prose,3000,True,False,1282,1254,1944,3000,matched,1381,,,,,False,False,88,112.9,0,0,10432,False,,三千円です、税込で初期費用三千円になります。
+pricefirst-live-normal-prose-01,pricefirst,live,normal,prose,1000,True,False,1274,1245,1725,1000,matched,975,,,,,,False,147,115.7,0,429,9521,False,,千円です。月額料金は税込みで千円です。
+pricefirst-live-normal-prose-02,pricefirst,live,normal,prose,1000,True,True,1240,4641,5176,1000,matched,1098,,,,,,False,127,127.4,0,1601,10152,False,,千円です。月額料金は税込で千円で、初期費用は税込三千円です
+pricefirst-live-normal-prose-03,pricefirst,live,normal,prose,1000,True,True,1474,1442,1919,1000,matched,1209,,,,,,False,146,147.7,0,5386,10267,False,,千円です。月額は税込で千円で、初期費用は税込三千円になります。商品
