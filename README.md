@@ -76,6 +76,16 @@ Goを選んだ理由は、公開APIキーを扱う処理が小さく、標準ラ
 
 音響計測は顧客側のマイクに対する推定です。複数人を同じマイクで収録した場合は声が混ざります。合成音での検証と実環境での精度は分けて評価します。[YINの原論文](https://doi.org/10.1121/1.1458024)・[Liveのセッション管理](https://developers.openai.com/api/docs/guides/live-conversations)
 
+### Goの変更箇所
+
+| 変更したい内容 | ファイル・パッケージ |
+| --- | --- |
+| 起動ポート、待ち受け、HTTPサーバーのタイムアウト | [main.go](main.go) |
+| 環境変数と `.env` の読み込み | [internal/config](internal/config) |
+| ブラウザ向けAPIのルート、入力検証、公開するレスポンス | [internal/desk](internal/desk) |
+| OpenAIへの接続、Liveセッションの構成、専門分析のモデル切り替え | [internal/openai](internal/openai) |
+| 営業担当の指示、挨拶、会話制御の判定基準 | [instructions.go](internal/openai/instructions.go) |
+
 ## 調査と費用
 
 - [ARTEXのアーキテクチャ調査](docs/artex.md)に、REAで解析した箇所、上流コミットへの固定リンク、商談設計に応用した仕組みとライセンスを記載しました。
@@ -92,4 +102,4 @@ npm --prefix frontend run typecheck
 
 Goテストはローカルの模擬APIでセッション生成、キーの取り扱い、失敗時の挙動を検証します。ブラウザ側の単体テストは合成波形、字幕の順序、意向の撤回、商談目標と応答手法の対応を検証します。
 
-実際のDecisionsに日本語の意味判定を問い合わせる回帰試験は、`SALES_RUN_SEMANTIC_EVAL=1 go test -run TestLiveConversationMeanings -count=1 -v .` で実行できます。設定したAPIキーを使用する有料の試験です。
+実際のDecisionsに日本語の意味判定を問い合わせる回帰試験は、`SALES_RUN_SEMANTIC_EVAL=1 go test -run TestLiveConversationMeanings -count=1 -v ./internal/openai` で実行できます。設定したAPIキーを使用する有料の試験です。

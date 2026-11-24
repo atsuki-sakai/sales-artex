@@ -1,13 +1,16 @@
-package main
+package openai
 
 import (
 	"context"
 	"encoding/json"
 	"net/http"
 	"os"
+	"path/filepath"
 	"slices"
 	"testing"
 	"time"
+
+	"sales-artex/internal/config"
 )
 
 // Opt-in evaluation of the production choice question on complete Japanese
@@ -16,8 +19,8 @@ func TestLiveConversationMeanings(t *testing.T) {
 	if os.Getenv("SALES_RUN_SEMANTIC_EVAL") != "1" {
 		t.Skip("実モデル評価は SALES_RUN_SEMANTIC_EVAL=1 で実行")
 	}
-	cfg, err := readSettings(".env")
-	if err != nil || cfg.key == "" {
+	cfg, err := config.Load(filepath.Join("..", "..", ".env"))
+	if err != nil || cfg.APIKey == "" {
 		t.Fatal("実モデル評価に使うAPIキーを読み込めません")
 	}
 	var session struct {
@@ -25,7 +28,7 @@ func TestLiveConversationMeanings(t *testing.T) {
 			Decisions struct{ Questions json.RawMessage }
 		}
 	}
-	payload, err := json.Marshal(sample.sessionConfig())
+	payload, err := json.Marshal((SessionInput{}).sessionConfig())
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -53,14 +56,14 @@ func TestLiveConversationMeanings(t *testing.T) {
 		{"見積中の引用", "顧客が取引先から受けた依頼を説明している。", "先方から『ここで終わりにしてください』と言われた時は、見積をどう直せますか。", keepOpen},
 		{"通話終了を依頼", "営業担当が説明している。", "もうお電話はここまでにしてください。失礼します。", []string{"end_call"}},
 	}
-	a := app{client: liveHTTPClient()}
+	client := NewClient(DefaultBaseURL)
 	for _, tc := range cases {
 		t.Run(tc.name, func(t *testing.T) {
 			ctx, cancel := context.WithTimeout(context.Background(), 12*time.Second)
 			defer cancel()
 			input := "会話の状況：" + tc.history + "\n今回の顧客の発言：" + tc.customer
-			resp, err := a.post(ctx, "https://api.openai.com/v1/decisions", cfg.key, map[string]any{
-				"model": "gpt-6-luna", "input": input, "questions": session.Triggers[0].Decisions.Questions,
+			resp, err := client.post(ctx, "/decisions", cfg.APIKey, map[string]any{
+				"model": decisionsModel, "input": input, "questions": session.Triggers[0].Decisions.Questions,
 			})
 			if err != nil {
 				t.Fatal(err)
